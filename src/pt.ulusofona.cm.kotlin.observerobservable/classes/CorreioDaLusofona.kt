@@ -37,6 +37,7 @@ class CorreioDaLusofona(val maxLeitores: Int, private var listaNoticias: Mutable
         listaLeitoresRegistados.forEach{
             it.onReceiveNoticia(listaNoticias.last())
         }
+
     }
 
     fun iniciar(){

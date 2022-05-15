@@ -34,10 +34,9 @@ class CorreioDaLusofona(val maxLeitores: Int, private var listaNoticias: Mutable
     }
 
     private fun notificarLeitores(){
-        listaLeitoresRegistados.forEach{
+        listaLeitoresRegistados.forEach {
             it.onReceiveNoticia(listaNoticias.last())
         }
-
     }
 
     fun iniciar(){

@@ -6,7 +6,6 @@ class Bufo(nome: String) : Leitor(nome), OnNumeroListener, OnNoticiaListener {
     var listaNoticias: MutableList<Noticia> = mutableListOf()
 
     fun imprimeNumeros(): String{
-
         return "$nome leu as seguintes noticias: ${listaNumeros.toString()}"
     }
 
